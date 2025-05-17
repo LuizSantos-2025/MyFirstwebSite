@@ -1,0 +1,20 @@
+.estilizando_li{
+    border: 2px solid red;
+    margin-top:4px;
+    width: 150px;
+    border-radius: 8px;
+    text-align: center;
+    background-color:aqua;
+    list-style:none; 
+}
+nav {
+    display: flex;
+    font-size: 25px;
+    background-color:rgba(204, 99, 0, 0.568);
+    gap: 2rem;
+    border: 2px solid black;
+    height: 50px;
+    justify-content: center;
+    
+
+}

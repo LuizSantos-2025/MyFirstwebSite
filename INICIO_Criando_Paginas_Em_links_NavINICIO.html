@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <a href="https://www.google.com" target="_blank">Home</a>
+        <a href="./My_First_WebSite/" target="_blank">My First WebSite</a>
+        <a href="#">Programação</a>
+        <a href="#">Xadrez</a>
+
+
+    </nav>
+    <h1>Desenvolvendo Lista Dinamica</h1>
+
+    <input type="text" id="alpha" placeholder="Digite Texto">
+    <input type="submit" onclick="takeIt()">
+
+    <ul id="omega">
+
+    </ul>
+
+    <script>
+        function takeIt() {
+
+
+            var id_omega = document.getElementById("omega");
+            var id_alpha = document.getElementById("alpha").value;
+            var cria_elemento = document.createElement("li");
+            cria_elemento.setAttribute("class", "estilizando_li");
+
+            var cria_no_texto = document.createTextNode(id_alpha);
+
+            cria_elemento.appendChild(cria_no_texto);
+            id_omega.appendChild(cria_elemento);
+
+        }
+    
+    </script>
+
+</body>
+</html>

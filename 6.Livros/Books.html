@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./books.css">
+</head>
+<body>
+   
+    
+<nav id="btn1">
+    <div class="GameOfThrones">
+        <button onclick="ModoEscuro()">Dark Mode</button>
+            </div>
+                 <div class="following">
+                    <button onclick="Refresh()">Refresh</button>
+                 </div>
+               <div class="Dexter">
+        <button onclick="ModoClaro()">Clear Mode</button>
+    </div>
+</nav>  
+<!-- <img src="./Book.jpg" alt="Livros"> -->
+
+    
+    <nav id="btn2">
+        <input type="text" id="TakeThisValue" placeholder="Digite Um Livro">
+        <input type="submit" id="sub" onclick="SelectBook()">
+    </nav> 
+   
+
+
+    <h1>Lista de Livros</h1>
+
+    <ul id="lista"></ul> 
+    
+    
+
+    <script>
+        function SelectBook(){
+            var ValorDigitado = document.getElementById("TakeThisValue").value;
+            var ValorInserido = document.getElementById("lista");
+            var CriaElement = document.createElement("li");
+            CriaElement.setAttribute("class","AtributoDinamico");
+
+            var TextoValorDigitado = document.createTextNode(ValorDigitado);
+            CriaElement.appendChild(TextoValorDigitado);
+            ValorInserido.appendChild(CriaElement);
+        }
+
+
+
+        function ModoEscuro(){
+
+        let modoEscuro = document.querySelector("body");
+        modoEscuro.style.backgroundColor = "#333";
+        modoEscuro.style.color = "white";
+        console.log('Modo Escuro');
+        }
+
+        function Refresh(){
+            const refresher = document.querySelector("body");
+            refresher.style = "html";
+            console.log('Modo Normal');
+        }
+
+        function ModoClaro(){
+        let modoClaro = document.querySelector("body");
+        modoClaro.style.backgroundColor = "grey";
+        modoClaro.style.color = "black";
+        console.log('Modo Claro');
+        };       
+
+    </script>
+</body>
+</html>

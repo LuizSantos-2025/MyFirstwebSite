@@ -1,0 +1,79 @@
+
+
+#imagem-chess {
+    display: flex;
+    gap: 1rem;
+}
+
+
+#btn{
+    display:block;
+    gap: 10px;
+    text-align: right;
+    padding-right: 50px;
+}
+#DarkMode {
+    font-size: 20px;
+    width:70px;
+
+
+}
+#LightMode{
+    font-size: 20px;
+    width:70px;
+    
+
+}
+#teste {
+    height: 25px;
+    width: 70px;
+    text-align: center;
+}
+#teste2 {
+    height: 25px;
+    width: 70px;
+    text-align: center;
+}
+#sub{
+    height: 30px;
+    border-radius: 4px;
+    background-color: green;
+    width: 50px;
+}
+#sub2{
+    height: 30px;
+    border-radius: 4px;
+    background-color: green;
+    width: 50px;
+}
+
+#MostraValor{
+    background-color:white;
+    color: black;
+    width: 70px;
+    
+    text-align: center;
+
+}
+#MostraValor2{
+    background-color:white;
+    color: black;
+    width: 70px;
+    text-align: center;
+
+    }
+#ResultadoMultiplicacao{
+    background-color:white;
+    color: black;
+    width: 70px;
+    text-align: center;
+
+}
+
+#operar {
+    height: 30px;   
+    border-radius: 4px;
+    background-color: green;
+    width: 70px;
+    
+}

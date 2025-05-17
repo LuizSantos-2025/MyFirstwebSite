@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo Imangens</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="Escuro()">
+    <div id="btn">
+        <button id="DarkMode" onclick="Escuro()">Dark</button>
+        <button id="LightMode" onclick="Claro()">Light</button>
+     </div>
+    <H1>Estudos de Aberturas e Variantes</H1>
+   
+    <p>Gambito do rei</p>
+     <button id="btn2">Click <==</button><br><br>
+     <nav id="imagem-chess">
+        <span id="first-image"></span>
+        <span id="second-image"></span>
+     </nav>
+
+ 
+     <button id="btn3">Click ==></button><br><br><br>  
+     
+    
+     <input id="teste" type="text" placeholder="DigiteAqui">
+     <input id="sub" type="submit" onclick="numero()">
+     <br>
+     
+     <input id="teste2" type="text" placeholder="OutroValor" >
+    
+     <input id="sub2" type="submit" onclick="numero2()">
+     <br><br>
+
+     <button id="operar" onclick="Op()">Operar</button>
+
+     <p id="MostraValor"></p>
+     <p id="MostraValor2"></p>
+     <p id="ResultadoMultiplicacao"></p>
+   
+
+     <script>
+        var btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click", function(){
+        
+        var imagem = document.getElementById("first-image").innerHTML="<img src='img/e4.jpg' width='250'>" 
+        });
+
+        var imagem2 = document.getElementById("btn2");
+        imagem2.addEventListener("click", function(){
+        
+        var imagem3 = document.getElementById("second-image").innerHTML="<img src='img/e5.jpg' width='250'>" 
+        });
+        
+
+
+
+
+
+  
+
+        function numero(){
+             var pegaValorInput = document.getElementById("teste").value;
+
+           var selectP = document.getElementById("MostraValor");
+           console.log(selectP);
+                    
+           selectP.innerHTML = pegaValorInput;
+            
+        }
+        
+        function numero2(){
+            var num2 = document.getElementById("teste2").value;
+            console.log(num2);
+
+            var selectP = document.getElementById("MostraValor2");
+
+            selectP.innerHTML = num2;
+           
+        }   
+        function Op(){
+            var pegaValorInput = document.getElementById("teste").value;
+
+            var selectP = document.getElementById("MostraValor");
+            console.log(selectP);
+         
+           selectP.innerHTML = pegaValorInput;
+
+           var num2 = document.getElementById("teste2").value;
+            console.log(num2);
+
+            var selectP2 = document.getElementById("MostraValor2");
+
+            selectP2.innerHTML = num2;
+
+          var soma = pegaValorInput / (num2**num2);
+          console.log(soma) ;
+
+           var result = document.getElementById("ResultadoMultiplicacao");
+           
+           result.innerHTML=soma;
+           
+        
+
+       
+        }
+     </script>
+     <script>
+        function Escuro(){
+            var Escurecer = document.querySelector("body");
+            Escurecer.style.backgroundColor = "black";
+            Escurecer.style.color = "green";
+        }
+
+        function Claro(){
+            var Clarear = document.querySelector("body");
+            Clarear.style.backgroundColor = "white";
+        }
+     </script>
+</body>
+</html>

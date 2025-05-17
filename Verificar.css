@@ -1,0 +1,29 @@
+
+.estilizando_li{
+    border: 2px solid red;
+    margin-top:4px;
+    width: 150px;
+    border-radius: 8px;
+    text-align: center;
+    background-color:aqua;
+    list-style:none; 
+}
+
+nav {
+    background-color: #333;
+ }
+ 
+ nav li {
+     display: inline-block;
+ }
+ 
+ nav a {
+     display: inline-block;
+     color: white;
+     text-decoration: none;
+     padding: 15px;
+ }
+ 
+ nav a:hover{
+     background-color: blue;
+ }

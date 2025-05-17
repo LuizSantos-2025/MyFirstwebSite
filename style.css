@@ -1,0 +1,108 @@
+.estilizando_li{
+    border: 2px solid red;
+    margin-top:4px;
+    width: 150px;
+    border-radius: 8px;
+    text-align: center;
+    background-color:aqua;
+    list-style:none; 
+}
+.Nando {
+   cursor: pointer;
+   text-align: center;
+   margin-left: -500px;
+}
+
+nav li a:hover{
+   background-color: red ;
+   transition: .7s;
+  
+}
+.dropdownMenu {
+   position: absolute;
+   box-shadow: 0 0 20px orange;
+   display: none;
+   
+}
+.dropdownMenu a{
+   display: block;
+   color:blue;
+   
+   }
+   .dropdown:hover .dropdownMenu {
+      display: block; 
+      transition: .7s;
+   }
+nav {
+    background-color: #333;
+ }
+ 
+ nav li {
+     
+   display: inline-block;
+ }
+ 
+ nav a {
+     display: inline-block;
+     color: white;
+     text-decoration: none;
+     padding: 15px;
+ }
+ 
+ nav a:hover{
+     background-color: blue;
+     transition: .7s;
+ }
+ #divBtn{
+    /* border: 2px solid black; */
+    margin-top: 25px;
+    text-align: center;
+    
+ }
+ #btn {
+    font-size: 20px;
+    /* background-color: black; */
+    color: black;
+    /* margin-top: 25px; */
+    /* border: 2px solid red; */
+
+ }
+ #Escuro {
+    color: black;
+    background-color:white;
+    padding: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 50px;
+    margin-top: 5px;  
+    cursor: pointer;
+ }
+ #Escuro:hover {
+    color: white;
+    background-color: black;
+    transition: .7s;
+
+ }
+ #Claro {
+    /* display: inline-block; */
+    color: white;
+    background-color: black;
+    padding: 10px;
+    padding-left:1%;
+    padding-right: 1%;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 300px;   
+    cursor: pointer;  
+ }
+ #Claro:hover {
+    color: black;
+    background-color: white;
+    transition: .7s;
+ }
+ #lim {
+   cursor: pointer;
+ }
+ #lim:hover {
+   cursor:zoom-in;
+ }

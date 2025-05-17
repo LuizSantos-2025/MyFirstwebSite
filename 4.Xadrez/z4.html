@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./z4.css">
+</head>
+<body style="background-color: black; color:white">
+
+<div id="botoes">
+<button style="width: 100px; height: 35px;" id="btn" onclick="takeIt()">Next ====>></button> 
+
+<button style="width: 100px; height: 35px;" id="btn" onclick="takeIt()"><<====Before</button> 
+</div>
+   
+
+
+<p>Gambito do Rei</p>
+<ul class="bto">
+    <li id="lala" onclick="func()">E4</li>
+    <li id="lele" onclick="func2()">E5</li>
+    <li id="lili" onclick="func3()">F4</li>
+</ul>
+<div id="imagens-chess">
+<p id="teste"></p>
+<p id="teste2"></p>
+<p id="teste3"></p>
+</div>
+
+
+<script>
+    function func(){
+       var getIdUl = document.getElementById("lala");
+        getIdUl.addEventListener("click",function(){
+            var imagem = document.getElementById("teste").innerHTML="<img src='./img/e4.jpg' width='250px'>"
+        })
+    }
+
+    function func2(){
+       var getIdUl = document.getElementById("lele");
+        getIdUl.addEventListener("click",function(){
+            var imagem = document.getElementById("teste2").innerHTML="<img src='./img/e5.jpg' width='250px'>"
+        })
+}
+        function func3(){
+       var getIdUl = document.getElementById("lili");
+        getIdUl.addEventListener("click",function(){
+            var imagem = document.getElementById("teste3").innerHTML="<img src='./img/f4.jpg' width='250px'>"
+        })
+}
+    
+    
+
+    function takeIt(){
+
+        var show = document.querySelector(".showingMoves");
+        show.classList.remove("showingMoves");
+
+
+        // var getIdUl = document.querySelector("#btn");
+        // getIdUl.addEventListener("dblclick",function(){
+        //     var imagem = document.querySelector(".showingMoves").innerHTML="<img src='./img/e4.jpg' width='250px'>"
+
+        // })
+        
+
+
+
+
+    }
+
+
+</script>  
+</body>
+</html>
